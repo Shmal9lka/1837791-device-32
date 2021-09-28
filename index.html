@@ -148,14 +148,14 @@
         
         <!-- Tab content -->
         <div id="delivery" class="tabcontent">
-          <h3 class="item-tagline">Доставка</h3>
+          <h3 class="item-tagline" id="delivery-terms">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь<br>
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <img src="" class="advantage-image" alt="доставка">
         </div>
         
-        <div id="guarantee" class="tabcontent">
+        <div id="guarantee" class="tabcontent" id="guarantee-terms">
           <h3 class="item-tagline">Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас<br>
             сгорит дом — не переживайте, мы выдадим вам новый.<br>
@@ -171,13 +171,90 @@
             <img src="" class="advantage-image" alt="кредит">
         </div>
       </section>
-
+      <p>Доставим редкий товар под заказ <!-- Здесь надо добалять иконку машины справа от текста? -->
+        <button class="info" type="button">
+          <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+      </span>
+      </p>
+      <section>
+        <h2 class="about-us">О нас</h2>
+        <p class="item-tagline">Огромный выбор гаджетов не оставит равнодушным<br>
+        гика</p>
+        <p class="item-tagline">Мы можем доставить ваш товар в самые отдаленные<br>
+          уголки России транспортными компаниями:</p>
+          <ul class="delivery-list">
+            <li class="delivery-item">Меловые линии</li>
+            <li class="delivery-item">СДИК</li>
+            <li class="delivery-item">ТоксБерри</li>
+          </ul>
+        <a href="#" class="delivery-item">Подробнее о нас</a>
+      </section class="contacts">
+      <h2 class="contacts-title" id="contacts">Контакты</h2>
+      <p class="item-tagline">Вы можете забрать товар сами, заехав в наш офис<br>
+      Заодно, сможете проверить работоспособность покупки.</p>
+      <h3 class=contacts-subtitle>Интернет-магазин «Девайс»</h3>
+      <address class="contacts-address">
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+      <h3 class="contacts-subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="button button-feedback" href="#">Обратная связь</a>
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscribe-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          </p>
+          <button class="button subscribe-button" type="submit">
+            <span class="subscribe-button">Подписаться</span>
+          </button>
+        </form>
+      </section>
     </main>
-    <footer>
-
+    <footer class="page-footer">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+          <img class="footer-contacts-logo" src="" alt="Логотип Интернет-магазина Девайс">
+          <address class="footer-contacts-address">
+            <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
+      </section>
+      <section class="work-terms">
+        <ul class="our-services"> <!-- ссылки не работают -->
+          <li><a href="#delivery-terms">Доставка</a></li>
+          <li><a href="#guarantee-terms">Гарантия</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </section>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Давайте дружить</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Контакты</span>
+            </a>
+          </li>
+        </ul>
+        <address class="footer-phonenumber">
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="#" class="html-academy-logo" alt="эйч-ти-эм-эл академия"></a>
     </footer>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
   </body>
 </html>
