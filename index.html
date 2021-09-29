@@ -6,40 +6,42 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="logo" src="#" alt="Логотип Интернет-магазина Девайс">
+      <a href="index.html"class="device link"><img class="logo" src="#" alt="Логотип Интернет-магазина Девайс"></a>
       <nav>
           <form action="#" method="post">
             <label for="search-field">
-             <img class ="search-icon" src="#" alt="Поиск"><!-- Возможно нужно сделать в виде кнопки -->
+             <img class="search-icon" src="#" alt="Поиск">
             </label>
-            <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+           <input type="search" name="search" id="search-field" aria-label="Search through site content" placeholder="Поиск по сайту">
           </form>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Доставка</a><!-- Возможна ссылка на страницу -->
+              <a class="navigation-link" href="map.html">Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гарантия</a><!-- Возможна ссылка на страницу -->
+              <a class="navigation-link" href="privacy-policy.html">Гарантия</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#conacts">Контакты</a><!-- Обязательно указать айди у секции с контактами -->
+              <a class="navigation-link" href="#contacts">Контакты</a>
             </li>
           </ul>
           <div class="dropdown"><!-- Здесь я без понятия как делать анимацию кнопки с + на - -->
-            <button onclick="myFuction()" class="dropbtn">
+           <!-- <button onclick="myFuction()" class="dropbtn">
               <img src="#" class="icon-cross">
-              <div id="goods-dropdown" class="dropdown-content"><!-- Может удобнее будет сделать таблицей? -->
-                <a href="#">Виртуальная реальность</a>
-                <a href="#">Моноподы для селфи</a>
-                <a href="#">Экшн-камеры</a>
-                <a href="#">Фитнес-браслеты</a>
-                <a href="#">Умные часы</a>
-                <a href="#">Квадрокоптеры</a>
-              </div>
-            </button>
+              <div id="goods-dropdown" class="dropdown-content">
+                <ul class="link-dropdown-list">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>   
+            </button>-->
             <ul class="navigation-list-small">
               <li class="navigation-item-small">
                 <a class="navigation-link-small" href="#"><img src="#" class="icon-auth">Войти</a>
@@ -53,7 +55,7 @@
             </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-index">
       <h1 class="visually-hidden">Интернет магазин Девайс</h1>
       <section>
         <h2 class="visually-hidden">Демонстрация товаров</h2>
@@ -236,17 +238,17 @@
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Контакты</span>
             </a>
           </li>

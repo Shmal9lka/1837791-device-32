@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Виталий Шарапов](https://up.htmlacademy.ru/htmlcss/32/user/1837791).
-* Наставник: `[Алексей Пудников] (https://htmlacademy.ru/profile/id71418)`.
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
