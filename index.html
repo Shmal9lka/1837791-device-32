@@ -51,15 +51,20 @@
               </li>
               <li class="navigation-item-small"><!-- Знаю, что неправильно. Здесь должен быть выпадающий список с кнопочными эелементами -->
                 <a class="navigation-link-small" href="#"><img src="#" class="icon-basket">Корзина</a>
+                <ul>
+                  <li>Любительская селфи-палка</li>
+                  <li>Профессиональная селфи-палка</li>
+                  <a href="basket.html" class="dropdown-basket-link">Открыть корзину</a>
+                </ul>
               </li>
             </ul>
       </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Интернет магазин Девайс</h1>
-      <section>
-        <h2 class="visually-hidden">Демонстрация товаров</h2>
-        <img class="slider-image" src="#" alt="Квадрокоптер">
+      <div>
+        <article class="visually-hidden">Демонстрация товаров</article>
+        <img class="slider-image" src="http://placecorgi.com/260/180" alt="Квадрокоптер">
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -70,109 +75,100 @@
           <p class="item-tagline">Порхает как бабочка,<br> жалит как пчела!</p>
           <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным по стандартную камеру.</p>
           <a href="#" class="item-details">подробнее</a>
-          <table class="item-technicals">
-            <tr class="meters">
-              <td>800 м</td>
-              <td>50м</td>
-            </tr>
-            <tr class="description">
-              <td>Дальность полета</td>
-              <td>Дальность полета</td>
-            </tr>
-          </table>
-        </div>
-        <div class="preview-switcher"> <!-- Здесь сильно сомневаюсь. Не знаю как и куда ставить велью и айди. Возможно ли будет расположить эти кнопки горизонтально -->
-          <ul> <!-- Правильно ли эти кнопки объединять в список -->
-            <li>
-              <button class="slider-button slider-1" type="radio"></button>
-            </li>
-            <li>
-              <button class="slider-button slider-2" type="radio"></button>
-            </li>
-            <li>
-              <button class="slider-button slider-3" type="radio"></button>
-            </li>
+          <ul class="item-range">
+            <li class="list-range">800 м</li>
+            <li class="list-range">50 м</li>
+          </ul>
+          <ul class="description">
+            <li class="list-discription">Дальность полета</li>
+            <li class="list-discription">Дальность полета</li>
           </ul>
         </div>
+          <ul class="slider-list"> 
+            <li>
+              <input id="drone" name="preview" value="drone" type="radio" checked>
+              <label for="drone" class="visually-hidden">Дрон</label>
+            </li>
+            <li>
+              <input id="watches" name="preview" value="watches" type="radio">
+              <label for="watches" class="visually-hidden">Часы</label>
+            </li>
+            <li>
+              <input id="monopod" name="preview" value="monopod" type="radio">
+              <label for="monopod" class="visually-hidden">Монопод</label>
+            </li>
+          </ul>
       </section>
       <section>
-        <h2 class="visually-hidden">Типа товаров магазина Device</h2>
-        <table>
-          <tr>
-            <td><a href="#" class="item-type-image">
-              <img src="#" class="virtual-glasses-type-image" alt="очки виртуальной реальности">
-            </a></td>
-            <td><a href="#" class="item-type-image">
-              <img src="#" class="monopods-type-image" alt="моноподы для селфи">
-            </a></td>
-            <td><a href="#" class="item-type-image">
-              <img src="#" class="action-camera-type-image" alt="экшн-камеры">
-            </a></td>
-            <td><a href="#" class="item-type-image">
-              <img src="#" class="fitness-bracelets-type-image" alt="фитнес-бласлеты">
-            </a></td>
-            <td><a href="#" class="item-type-image">
-              <img src="#" class="smartwatch-type-image" alt="умные часы">
-            </a></td>
-            <td><a href="#"class="item-type-image">
-              <img src="#" class="item-type-quadro" alt="квадрокоптеры">
-            </a></td>
-          </tr>
-          <tr>
-            <td>
-              <a href="" class="item-type-link">Виртуальная<br>реальность</a>
-            </td>
-            <td>
-              <a href="" class="item-type-link">Моноподы<br>для селфи</a>
-            </td>
-            <td>
-              <a href="" class="item-type-link">Экшн-камеры</a>
-            </td>
-            <td>
-              <a href="" class="item-type-link">Фитнес-браслеты</a>
-            </td>
-            <td>
-              <a href="" class="item-type-link">Умные часы</a>
-            </td>
-            <td>
-              <a href="" class="item-type-link">Квадрокоптеры</a>
-            </td>
-          </tr>
-        </table>
+        <h2 class="visually-hidden">Типы товаров магазина Device</h2>
+        <ul class="goods-icons">
+          <li><a href="catalog-virtual.html" class="item-type-image">
+            <img src="#" class="virtual-glasses-type-image" alt="очки виртуальной реальности"></a>
+          </li>
+          <li><a href="catalog-monopods.html" class="item-type-image">
+            <img src="#" class="monopods-type-image" alt="моноподы для селфи">
+          </a>
+          </li>
+          <li><a href="catalog-action.html" class="item-type-image">
+            <img src="#" class="action-camera-type-image" alt="экшн-камеры"></a>
+          </li>
+          <li><a href="catalog-fitness.html" class="item-type-image">
+            <img src="#" class="fitness-bracelets-type-image" alt="фитнес-бласлеты"></a>
+          </li>
+          <li><a href="catalog-watches.html" class="item-type-image">
+            <img src="#" class="smartwatch-type-image" alt="умные часы"></a>
+          </li>
+          <li><a href="catalog-quadro.html"class="item-type-image">
+            <img src="#" class="item-type-quadro" alt="квадрокоптеры"></a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="catalog-virtual.html" class="item-type-link">Виртуальная<br>реальность</a></li>
+          <li><a href="catalog-monopods.html" class="item-type-link">Моноподы<br>для селфи</a></li>
+          <li><a href="catalog-action.html" class="item-type-link">Экшн-камеры</a></li>
+          <li><a href="catalog-fitness.html" class="item-type-link">Фитнес-браслеты</a></li>
+          <li><a href="catalog-watches.html" class="item-type-link">Умные часы</a></li>
+          <li><a href="catalog-quadro.html" class="item-type-link">Квадрокоптеры</a></li>
+        </ul>
       </section>
-      <section>
+
         <h2 class="visually-hidden">Преимущества</h2> <!-- Здесь не понимаю как делать, может figure? -->
-        <div class="tab">
-          <button class="tablinks" onclick="open-delivery(event, 'delivery')">Доставка</button>
-          <button class="tablinks" onclick="open-guarantee(event, 'guarantee')">Гарантия</button>
-          <button class="tablinks" onclick="open-credit(event, 'credit')">Кредит</button>
-        </div>
-        
-        <!-- Tab content -->
-        <div id="delivery" class="tabcontent">
-          <h3 class="item-tagline" id="delivery-terms">Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо<br>
+        <ul class="services">
+          <li class="tab-button">
+            <input id="delivery-button" name="services-button" value="delivery-button" type="radio">
+            <label for="delivery-button" class="tab">Доставка</label></li>
+          <li class="tab-button">
+            <input id="guarantee-button" name="services-button" value="guarantee-button" type="radio">
+            <label for="guarantee-button" class="tab">Гарантия</label></li>
+          <li class="tab-button">
+            <input id="credit-button" name="services-button" value="credit-button" type="radio">
+            <label for="credit-button" class="tab">Кредит</label></li>    
+
+        </ul>
+        <ul>
+          <li class="tabcontent">
+            <h3 class="item-tagline" id="delivery-terms">Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь<br>
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="" class="advantage-image" alt="доставка">
-        </div>
-        
-        <div id="guarantee" class="tabcontent" id="guarantee-terms">
-          <h3 class="item-tagline">Гарантия</h3>
+            <img src="" class="advantage-image" alt="доставка"></li>
+          <li class="tabcontent">
+            <h3 class="item-tagline">Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас<br>
             сгорит дом — не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.</p>
             <img src="" class="advantage-image" alt="гарантия">
-        </div>
-        
-        <div id="credit" class="tabcontent">
+          </li>
+          <li class="tabcontent">
           <h3 class="item-tagline">Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные<br>
             консультанты подберут для вас наиболее выгодные<br>
             условия кредита. Выгодные для банка, разумеется.</p>
             <img src="" class="advantage-image" alt="кредит">
-        </div>
-      </section>
+          </li>
+        </ul>
+
+
       <p>Доставим редкий товар под заказ <!-- Здесь надо добалять иконку машины справа от текста? -->
         <button class="info" type="button">
           <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
