@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
 
-    src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+    src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face{
@@ -11,14 +11,14 @@
     font-style: normal;
     font-weight: 700;
 
-    src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+    src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
 @font-face{
-    font-family: "rubik";
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 800;
-    src: url("fonts/rubik/rubik-800.woff2") format("woff2");
+    src: url("/fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
 }
 @font-face{
@@ -26,7 +26,7 @@
     font-style: normal;
     font-weight: 800;
 
-    src: url("fonts/Raleway/Raleway.woff2") format("woff2");
+    src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
 body{
@@ -41,17 +41,190 @@ header{
     background-color: #FFE17F;
     background-size: 1160px 300px;
 }
-.navigation-list{
+a{
+    color:black;
+    text-decoration: none;
+}
+footer a{
+    color:white;
+    }
+.navigation-item{
     font-style: "Raleway";
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    text-align:left;
+}
+.navigation-item-small{
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #000000;
+    text-align:left;
+}
+.navigation-contacts{
+    text-align:right;
+}
+.item-head{
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    text-align:left;
+}
+.item-tagline{
+
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #444444;
+    text-align:left;
+}
+.details{
+    font-family: "Raleway";
+    font-weight: 800;
     font-size: 18px;
     line-height: 22px;
+    text-align:center;
+    background-color: #FFE17F;
+    text-decoration:none;
+}
+.list-range{
+
+    font-weight: 400px;
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+    text-align:left;
+}
+.item-type-link{
+    font-family: "Raleway";
+    font-weight: 800;
+    line-height: 24px;
+    text-align:left;
+    text-decoration:none;
+}
+.rare-goods{
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+ .delivery-item{ 
+
+    font-weight: 700px; /*не могу понять, почему не получется жирным */
+    line-height: 20px;
+    color: #000000;
+    text-align:left;
+    
+}
+.contacts-subtitle{
+
+    font-weight: 700px; 
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+    text-align:left;
+}
+.field{
+color:#444444;
+}
+.contacts-phone{
+    color:white;
+}
+
+address{
+    text-decoration:none;
 }
 footer{
     background-color: #444444;
+    color:white;
+    font-size: 16px;
+    line-height: 19px;
+}
 
+.about-text{
+    font-weight: 400px;
+    text-decoration:none;
+    text-align: left;
+}
+.footer-social-item{
+    font-style: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-align:center;
+}
+.contacts-phone{
+    text-decoration:none;
+    text-align: right;
+}
+.filter-head{
+    font-style: "Raleway";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color:black;
+}
+.catalog-filter-title{
+
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-align:left;
+}
+.catalog-filter{
+    background-color: #E5E5E5;
+}
+.inner-header{
+    background-color: white;
+}
+.control-color, .control-label{
+    font-size: 16px;
+    line-height: 19px;
+    text-align:left;
+    color:black;
+}
+.sorting-table{
+    background-color:#E5E5E5;
+}
+h3{
+    line-height: 24px;
+    font-weight: 700;
+}
+.product-card-price{
+    font-weight:400px;
+    line-height: 22px;
+    color: #444444;
 }
 .virtual-glasses-type-image, .monopods-type-image,
  .action-camera-type-image, .fitness-bracelets-type-image, .smartwatch-type-image, .item-type-quadro{
     background-color:#FFE17F;
     background-size: 160px 160px;
+}
+.show-more{ /*такое ощущение что шрифт совсем другой, может неправильно подключил*/
+    width:760px;
+    height: 55px;
+    border: 3px solid #EBEBEB;
+    background-color: white;
+}
+.pagination-container{
+    background-color: #EBEBEB;
+}
+.pagination-link{
+    color:#444444;
+}
+.our-services{
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color:white;
 }
