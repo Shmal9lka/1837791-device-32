@@ -2,7 +2,6 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
-
     src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
@@ -10,7 +9,6 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
-
     src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
 }
@@ -25,7 +23,6 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
-
     src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
@@ -37,16 +34,16 @@ body{
     color: #000000;
 }
 
-header{
+.page-header{
     background-color: #FFE17F;
     background-size: 1160px 300px;
 }
 a{
-    color:black;
+    color:#000000;
     text-decoration: none;
 }
-footer a{
-    color:white;
+.footer-links{
+    color:#fff;
     }
 .navigation-item{
     font-style: "Raleway";
@@ -54,17 +51,19 @@ footer a{
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
+    
+}
+.text-left{
     text-align:left;
 }
 .navigation-item-small{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-decoration:none;
     text-transform: uppercase;
     color: #000000;
-    text-align:left;
-}
+   }
 .navigation-contacts{
     text-align:right;
 }
@@ -73,15 +72,15 @@ footer a{
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    text-align:left;
+
 }
 .item-tagline{
 
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 19px;
     color: #444444;
-    text-align:left;
+
 }
 .details{
     font-family: "Raleway";
@@ -94,17 +93,16 @@ footer a{
 }
 .list-range{
 
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 36px;
     line-height: 30px;
     color: #000000;
-    text-align:left;
+
 }
 .item-type-link{
     font-family: "Raleway";
     font-weight: 800;
     line-height: 24px;
-    text-align:left;
     text-decoration:none;
 }
 .rare-goods{
@@ -118,49 +116,41 @@ footer a{
 }
  .delivery-item{ 
 
-    font-weight: 700px; /*не могу понять, почему не получется жирным */
+    font-weight: 700; 
     line-height: 20px;
     color: #000000;
-    text-align:left;
     
 }
 .contacts-subtitle{
 
-    font-weight: 700px; 
+    font-weight: 700; 
     font-size: 24px;
     line-height: 30px;
     color: #444444;
-    text-align:left;
+
 }
 .field{
-color:#444444;
+    color:#444444;
 }
 .contacts-phone{
-    color:white;
+    color:#fff;
 }
 
 address{
     text-decoration:none;
 }
-footer{
+.page-footer{
     background-color: #444444;
-    color:white;
+    color:#fff;
     font-size: 16px;
     line-height: 19px;
 }
 
 .about-text{
-    font-weight: 400px;
+    font-weight: 400;
     text-decoration:none;
-    text-align: left;
 }
-.footer-social-item{
-    font-style: "Raleway";
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    text-align:center;
-}
+
 .contacts-phone{
     text-decoration:none;
     text-align: right;
@@ -170,15 +160,15 @@ footer{
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
-    color:black;
+    color:#000000;
 }
 .catalog-filter-title{
 
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     color: #000000;
-    text-align:left;
+
 }
 .catalog-filter{
     background-color: #E5E5E5;
@@ -189,8 +179,7 @@ footer{
 .control-color, .control-label{
     font-size: 16px;
     line-height: 19px;
-    text-align:left;
-    color:black;
+    color:#000000;
 }
 .sorting-table{
     background-color:#E5E5E5;
@@ -200,20 +189,22 @@ h3{
     font-weight: 700;
 }
 .product-card-price{
-    font-weight:400px;
+    font-weight:400;
     line-height: 22px;
     color: #444444;
 }
-.virtual-glasses-type-image, .monopods-type-image,
- .action-camera-type-image, .fitness-bracelets-type-image, .smartwatch-type-image, .item-type-quadro{
+.product-image{
     background-color:#FFE17F;
     background-size: 160px 160px;
 }
-.show-more{ /*такое ощущение что шрифт совсем другой, может неправильно подключил*/
-    width:760px;
+.show-more{ 
+    font-family: "Raleway";
+    text-transform: uppercase;
+    width: 760px;
     height: 55px;
     border: 3px solid #EBEBEB;
-    background-color: white;
+    background-color: #fff;
+
 }
 .pagination-container{
     background-color: #EBEBEB;
@@ -226,5 +217,5 @@ h3{
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
-    color:white;
+    color:#fff;
 }
