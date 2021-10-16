@@ -453,9 +453,14 @@ width:360px;
     justify-self: center;
     order:1;
 }
+.inner-header{
+    margin:0 auto; 
+    width: 1160px;
+}
 .catalog-products{
     display: flex;
     width: 1160px;
+    margin:0 auto;
 }
 .filter-column{
     margin-right:72px;
