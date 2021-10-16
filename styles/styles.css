@@ -32,6 +32,7 @@ body{
     line-height: 30px;
     background-color: #FFFFFF;
     color: #000000;
+    margin:0;
 }
 
 .page-header{
@@ -63,6 +64,7 @@ a{
     text-decoration:none;
     text-transform: uppercase;
     color: #000000;
+
    }
 .navigation-contacts{
     text-align:right;
@@ -218,4 +220,247 @@ h3{
     font-size: 18px;
     line-height: 22px;
     color:#fff;
+}
+
+.navigation{
+
+    margin:0 auto; /* не удается отцентровать, решил что в каждый крупный блок буду вставлять, так работает*/
+}
+
+
+.upper-nav{
+    display:flex;
+    flex-direction:row;
+    padding:0;
+    width: 1075px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    
+}
+#search-field{
+    width: 480px;
+    border:0px solid;
+    background-color:inherit;
+    margin-right: 24px;
+}
+.navigation-list-small{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    padding:0;
+    
+    
+       
+}
+.page-container{
+    margin:0 auto; /* не удается отцентровать*/
+}
+.icon-auth{
+    margin-right:12px;
+}
+.icon-compare{
+    margin-right:10px;
+}
+.icon-cart{
+    margin-right:10px;
+}
+.navigation-list{
+    display:flex;
+    flex-direction:row;
+    padding:0;
+    width: 1041px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+}
+.slider-section{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    padding:0;
+    
+    width:1161px;
+}
+.block-preview{
+    display:flex;
+}
+.no-list-style{
+    list-style: none;
+}
+.goods-icons{
+    display: flex;
+    width:1160px;
+    padding:0;
+    justify-content: space-between;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin: 0 auto;
+}
+.goods-items{
+    margin-right:40px;
+}
+.advantages-block{ 
+    
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.services{ 
+    margin:0;
+    justify-self: flex-start;/* не удается выровнять*/
+    width:360px;
+    margin: right 40px;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.tab-button{
+    width: 280px;
+    justify-self: flex-start;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.tabcontent{
+    margin-right: auto;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin:0 auto;
+    width:1160px;
+    
+}
+.about-block{
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    width:560px;
+    margin-right:40px;
+}
+.contact-block{
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    width:560px;
+    
+}
+.contacts-schedule{
+    margin:0;
+    padding: 0;
+}
+
+
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin:0 auto;
+    width:1160px;
+    flex-direction: column;
+}
+.subscribe-definition{
+    display:flex;
+    
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin:0 auto;
+}
+
+.subscribe-head{
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    width:560px;
+    margin-right:40px;
+}
+.subscribe-text{
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    width:560px;
+}
+
+
+.subscribe-block{
+    display: flex;
+    justify-content: space-between;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin:0 auto;
+    width:1160px;
+}
+.subscribe-form{
+    display: flex;
+    justify-content: space-between;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin:0;
+    width: 560px;
+}
+.subscribe-button-block{
+    display: flex;
+    justify-content: space-between;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    width: 560px;
+}
+.page-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin:0 auto;
+    width:1160px;
+}
+
+.footer-mid-block{
+    display: flex;
+}
+.footer-social-list{
+    display: flex;
+}
+.our-services{
+    display:flex;
+    width:440px;
+}
+.contacts-phone{
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin-left:auto;
+}
+.footer-right-block{
+    width: 560px;
+    display:flex;
+    flex-direction: column;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.footer-contacts-address{
+width:360px;
+}
+.footer-bot-block{
+    display: flex;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    flex-direction: row-reverse;
+}
+.footer-social-list{
+    justify-self: center;
+    order:1;
+}
+.catalog-products{
+    display: flex;
+    width: 1160px;
+}
+.filter-column{
+    margin-right:72px;
+    width: 328px;
+}
+.right-column{
+    width: 760px;
 }
