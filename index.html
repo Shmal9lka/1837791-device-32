@@ -5,82 +5,94 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <nav class="navigation container">
+      <nav class="nav-container">
       <a href="index.html"class="device link"><img class="logo" src="image/logo-main.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс"></a>
-      <div class="upper-nav">
-          <form action="#" method="get">
-            <label for="search-field">
-             <img class="search-icon" src="image/icon/search.svg" width="16" height="16" alt="Поиск">
-            </label>
-           <input type="search" name="search" id="search-field" aria-label="Search through site content" placeholder="Поиск по сайту" width="480">
-          </form>
-          <ul class="navigation-list-small"> 
-            <li class="navigation-item-small text-left">
-              <a class="navigation-link-small" href="#"><img src="image/icon/profile.svg" width="13" height="12"class="icon-auth">Войти</a>
-            </li>
-            <li class="navigation-item-small text-left">
-              <a class="navigation-link-small" href="#"><img src="image/icon/compare-icon.svg" width="10" height="12"class="icon-compare">Сравнить</a>
-            </li>
-            <li class="navigation-item-small text-left">
-              <a class="navigation-link-small" href="#"><img src="image/icon/cart-icon.svg" width="16" height="14"class="icon-basket">Корзина</a>
-              <!-- <ul> !Выключу для удобства верстки!
-                <li>Любительская селфи-палка</li> 
-                <li>Профессиональная селфи-палка</li>
-                <a href="basket.html" class="dropdown-basket-link">Открыть корзину</a>
-              </ul> --> 
-            </li>
+      <div class="upper-nav"> <!--ссылки в дивах странно занимают место, хз почему-->
+
+            <div class="input-wrapper">
+              <form action="#" method="get"class="input-container">
+                <label for="search-field">
+                 <img class="search-icon" src="image/icon/search.svg" width="16" height="16" alt="Поиск">
+                </label>
+               <input class="nav-search" type="search" name="search" id="search-field" aria-label="Search through site content" placeholder="Поиск по сайту" width="480">
+              </form>
+            </div>
+         
+          <div class="navigation-list-small"> 
+            <div class="navigation-item-small  profile">
+              <a class="navigation-link" href="#">Войти</a>
+            </div>
+            <div class="compare-basket-container">
+              <div class="navigation-item-small compare">
+                <a class="navigation-link" href="#">Сравнить</a> <!--Не могу правильно отцентровать, не понимаю как учитывать иконки-->
+              </div>
+              <div class="navigation-item-small cart">
+                <a class="navigation-link" href="#">Корзина</a>
+                <!-- <ul> !Выключу для удобства верстки! TODO:
+                  <li>Любительская селфи-палка</li>
+                  <li>Профессиональная селфи-палка</li>
+                  <a href="basket.html" class="dropdown-basket-link">Открыть корзину</a>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
+          <div class="nav-list-item catalog-item"><a href="catalog.html">Каталог товаров</a></div>
+          <ul class="nav-list right-container">
+            <li class="nav-list-item"><a href="#">Доставка</a></li>
+            <li class="nav-list-item"><a href="#">Гарантия</a></li>
+            <li class="nav-list-item "><a href="#" class="nav-contacts">Контакты</a></li>
           </ul>
         </div>
-          <ul class="navigation-list">
-            <li class="navigation-item text-left">
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="navigation-item text-left">
-              <a class="navigation-link" href="map.html">Доставка</a>
-            </li>
-            <li class="navigation-item text-left">
-              <a class="navigation-link" href="privacy-policy.html">Гарантия</a>
-            </li>
-            <li class="navigation-item text-left">
-              <a class="navigation-link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <!-- <div class="dropdown">Здесь я без понятия как делать анимацию кнопки с + на - -->
-           <!-- <button onclick="myFuction()" class="dropbtn">
-              <img src="#" class="icon-cross">
-              <div id="goods-dropdown" class="dropdown-content">
-                <ul class="link-dropdown-list">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
-              </div>   
-            </button>-->
+            <!-- <div class="dropdown">Здесь я без понятия как делать анимацию кнопки с + на - -->
+             <!-- <button onclick="myFuction()" class="dropbtn">
+                <img src="#" class="icon-cross">
+                <div id="goods-dropdown" class="dropdown-content">
+                  <ul class="link-dropdown-list">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                  </ul>
+                </div>
+              </button>-->
+          </div>
       </nav>
     </header>
-    <main class="main-index container">
+    <main class="main-index">
       <div class="page-container">
       <h1 class="visually-hidden">Интернет магазин Девайс</h1>
       <article class="visually-hidden">Демонстрация товаров</article>
-      <div class="slider-section">
+      <div class="slider-section container">
         <div class="block-preview">
-          <button class="slider-button slider-prev" type="button">
+          <button class="slider-button slider-prev visually-hidden" type="button"> TODO: скрыл что-бы не занимало место
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
           <img class="slider-image" src="image/drone-slider-1.jpg" width="560" height="560"alt="Квадрокоптер">
-          <button class="slider-button slider-next" type="button">
+          <button class="slider-button slider-next visually-hidden" type="button"> TODO: скрыл что-бы не занимало место
             <span class="visually-hidden">Следующее фото</span>
           </button>
         </div>
         <div class="defenition-to-slider">
           <p class="item-head text-left">Порхает как бабочка,<br> жалит как пчела!</p>
-          <p class="description definition">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным по стандартную камеру.</p>
-          <a href="#" class="details">подробнее</a>
+          <p class="description definition">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="#" class="details">подробнее</a> <!--Здесь лучше гридами,думаю.-->
+          <div class="slider-controls">
+            <button class="slider-button current" type="button" name="slider-button-1">
+              <span class="visually-hidden">Дрон</span>
+            </button>
+            <button class="slider-button" type="button" name="slider-button-2">
+              <span class="visually-hidden">Часы</span>
+            </button>
+            <button class="slider-button" type="button" name="slider-button-3">
+              <span class="visually-hidden">Монопод</span>
+            </button>
+          </div>
           <ul class="item-range no-list-style">
             <li class="list-range text-left">800 м</li>
             <li class="list-range text-left">50 м</li>
@@ -89,87 +101,75 @@
             <li class="list-description definition text-left">Дальность полета</li>
             <li class="list-description definition text-left">Радиус поражения</li>
           </ul>
-          <ul class="slider-list no-list-style"> 
-            <li>
-              <input id="drone" name="preview" value="drone" type="radio" checked>
-              <label for="drone" class="visually-hidden">Дрон</label>
-            </li>
-            <li>
-              <input id="watches" name="preview" value="watches" type="radio">
-              <label for="watches" class="visually-hidden">Часы</label>
-            </li>
-            <li>
-              <input id="monopod" name="preview" value="monopod" type="radio">
-              <label for="monopod" class="visually-hidden">Монопод</label>
-            </li>
-          </ul>
+          </div>
         </div>
-        </div>
-      <div class="good-types-block">
+      <div class="good-types-block container">
         <h2 class="visually-hidden">Типы товаров магазина Device</h2>
-        <ul class="goods-icons visually-hidden no-list-style">
+        <ul class="goods-icons no-list-style">
           <li class="goods-items"><a href="catalog-virtual.html" class="item-type-image item-type-link text-left">
-            <img src="image/icon/glasses.svg" class="product-image" alt="очки виртуальной реальности" width="160" height="160"> Виртуальная<br>реальность</a>
+            <img src="image/icon/glasses.svg" class="product-image" alt="очки виртуальной реальности" width="160" height="160"></a>
+            <p class="goods-title">Виртуальная<br>реальность</p>
           </li>
           <li class="goods-items"><a href="catalog-monopods.html" class="item-type-image item-type-link text-left">
-            <img src="image/icon/monopod-icon.svg" class="product-image" alt="моноподы для селфи" width="160" height="160">Моноподы<br>для селфи
-          </a>
+            <img src="image/icon/monopod-icon.svg" class="product-image" alt="моноподы для селфи" width="160" height="160"></a>
+            <p class="goods-title">Моноподы<br>для селфи</p>
           </li>
           <li class="goods-items"><a href="catalog-action.html" class="item-type-image item-type-link text-left">
-            <img src="image/icon/actioncamera-icon.svg" class="product-image" alt="экшн-камеры" width="160" height="160">Экшн-камеры
-          </a>
+            <img src="image/icon/actioncamera-icon.svg" class="product-image" alt="экшн-камеры" width="160" height="160"></a>
+            <p class="goods-title">Экшн-камеры</p>
           </li>
           <li class="goods-items"><a href="catalog-fitness.html" class="item-type-image item-type-link text-left">
-            <img src="image/icon/fitness-icon.svg" class="product-image" alt="фитнес-бласлеты" width="160" height="160">Фитнес-браслеты
-          </a>
+            <img src="image/icon/fitness-icon.svg" class="product-image" alt="фитнес-бласлеты" width="160" height="160"></a>
+            <p class="goods-title">Фитнес-браслеты</p>
           </li>
           <li class="goods-items"><a href="catalog-watches.html" class="item-type-image item-type-link text-left">
-            <img src="image/icon/watches-icon.svg" class="product-image" alt="умные часы" width="160" height="160">Умные часы
-          </a>
+            <img src="image/icon/watches-icon.svg" class="product-image" alt="умные часы" width="160" height="160"></a>
+            <p class="goods-title">Умные часы</p>
           </li>
           <li class="goods-items"><a href="catalog-quadro.html"class="item-type-image item-type-link text-left">
-            <img src="image/icon/drone-icon.svg" class="product-image" alt="квадрокоптеры" width="160" height="160">Квадрокоптеры
-          </a>
+            <img src="image/icon/drone-icon.svg" class="product-image" alt="квадрокоптеры" width="160" height="160"></a>
+            <p class="goods-title">Квадрокоптеры</p>
           </li>
         </ul>
         </div>
 
 
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="advantages-block">
-        <ul class="services no-list-style">
-          <li class="tab-button details">
-            <input id="delivery-button" name="services-button" value="delivery-button" type="radio" checked>
-            <label for="delivery-button" class="tab">Доставка</label></li>
-          <li class="tab-button details">
-            <input id="guarantee-button" name="services-button" value="guarantee-button" type="radio">
-            <label for="guarantee-button" class="tab">Гарантия</label></li>
-          <li class="tab-button details">
-            <input id="credit-button" name="services-button" value="credit-button" type="radio">
-            <label for="credit-button" class="tab">Кредит</label></li>    
-
-        </ul>
-        <div class="tabcontent">
-          <h3 class="item-head text-left">Доставка</h3>
-          <p class="item-tagline text-left">Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно! Ведь<br>
-            мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            
-        
-        <!--TODO: вернуть табы ниже при верстке-->
-        <!--  Уберу пока лишние табы
-          <h3 class="item-head text-left">Гарантия</h3>
-          <p class="item-tagline text-left">Если из-за возгорания купленного у нас товара у вас<br>
-            сгорит дом — не переживайте, мы выдадим вам новый.<br>
-            Товар, не дом, конечно же.</p>
-            
-        
-        
-        
-          <h3 class="item-head text-left">Кредит</h3>
-          <p class="item-tagline text-left">Залезть в долговую яму стало проще! Кредитные<br>
-            консультанты подберут для вас наиболее выгодные<br>
-            условия кредита. Выгодные для банка, разумеется.</p>-->
+        <div class="services-wrapper">
+          <div class="advantages-block container">
+          <ul class="services no-list-style">
+            <li class="tab-button details">
+              <input id="delivery-button" name="services-button" value="delivery-button" type="radio" checked>
+              <label for="delivery-button" class="tab">Доставка</label></li>
+            <li class="tab-button details">
+              <input id="guarantee-button" name="services-button" value="guarantee-button" type="radio">
+              <label for="guarantee-button" class="tab">Гарантия</label></li>
+            <li class="tab-button details">
+              <input id="credit-button" name="services-button" value="credit-button" type="radio">
+              <label for="credit-button" class="tab">Кредит</label></li>
+          </ul>
+          <div class="tabcontent">
+            <h3 class="item-head text-left">Доставка</h3>
+            <p class="item-tagline text-left">Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно! Ведь<br>
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          
+          
+          <!--TODO: вернуть табы ниже при верстке-->
+          <!--  Уберу пока лишние табы
+            <h3 class="item-head text-left">Гарантия</h3>
+            <p class="item-tagline text-left">Если из-за возгорания купленного у нас товара у вас<br>
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
+          
+          
+          
+          
+            <h3 class="item-head text-left">Кредит</h3>
+            <p class="item-tagline text-left">Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для банка, разумеется.</p>-->
+            </div>
           </div>
         </div>
 
@@ -179,7 +179,7 @@
           <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
       </span>
       </p>
-      <div class="contact-us">
+      <div class="contact-us container"> <!--TODO:Сделать на гридах-->
         <section class="about-block">
           <h2 class="item-head text-left">О нас</h2>
           <p class="item-tagline text-left">Огромный выбор гаджетов не оставит равнодушным<br>
@@ -211,66 +211,69 @@
         </section>
       </div>
       <section class="subscribe">
-        <div class="subscribe-definition">
-          <h2 class="item-head text-left subscribe-head">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="subscribe-text item-tagline text-left">Еженедельный дайджест с&nbsp;обзорами новинок,
-          длительными тест-драйвами, распаковками, а&nbsp;также акции, спецпредложения и&nbsp;вот это вот всё.</p>
-        </div>
-        <div class="subscribe-block">  
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">         
-            <p class="subscribe-email">            
-              <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>  
-            </p>     
-          </form>
-          <div class="subscribe-button-block">
-            <button class="button subscribe-button" type="submit">           
-            <p class="subscribe-button item-type-link">Подписаться</p>          
-            </button>
-            <p class="item-tagline">Это бесплатно</p>  
-          </div> 
+        <div class="container">
+          <div class="subscribe-definition">
+            <h2 class="item-head text-left subscribe-head">Подпишитесь на&nbsp;рассылку</h2>
+            <p class="subscribe-text item-tagline text-left">Еженедельный дайджест с&nbsp;обзорами новинок,
+              длительными тест-драйвами, распаковками, а&nbsp;также акции, спецпредложения и&nbsp;вот это вот всё.</p>
+          </div>
+          <div class="subscribe-block">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
+              <p class="subscribe-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+              </p>
+            </form>
+            <div class="subscribe-button-block">
+              <button class="button subscribe-button" type="submit">
+              <p class="subscribe-button item-type-link">Подписаться</p>
+              </button>
+              <p class="definition">Это бесплатно</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
     </main>
-    <footer class="page-footer container">
-      <img class="footer-contacts-logo" src="image/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
+    <footer class="page-footer">
+      <div class="container">
+
+          <img class="footer-contacts-logo" src="image/logo-footer.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
 
         <div class="footer-mid-block">
-          <h2 class="visually-hidden">Контакты</h2>
-            <address class="footer-contacts-address no-decoration">
-              <p class="about-text text-left">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
-            <ul class="our-services no-list-style"> <!-- ссылки не работают -->
-              <li><a class="footer-links" href="#delivery-terms">Доставка</a></li>
-              <li><a class="footer-links" href="#guarantee-terms">Гарантия</a></li>
-              <li><a class="footer-links" href="#contacts">Контакты</a></li>
-            </ul>
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <h2 class="visually-hidden">Контакты</h2>
+              <address class="footer-contacts-address no-decoration">
+                <p class="about-text text-left">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              </address>
+              <ul class="our-services no-list-style"> <!-- ссылки не работают -->
+                <li><a class="footer-links" href="#delivery-terms">Доставка</a></li>
+                <li><a class="footer-links" href="#guarantee-terms">Гарантия</a></li>
+                <li><a class="footer-links" href="#contacts">Контакты</a></li>
+              </ul>
+              <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
-
-
         <div class="footer-bot-block">
-          <h2 class="visually-hidden">Давайте дружить</h2>
-          <ul class="footer-social-list no-list-style">
-            <li class="footer-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden" aria-label="Фейсбук">Фейсбук</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden" aria-label="Инстаграм">Инстаграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.twitter.com/htmlacademy_ru">
-                <span class="visually-hidden" aria-label="Контакты">Твиттер</span>
-              </a>
-            </li>
-          </ul>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="image/icon/academy-logo.svg" width="115" height="34" class="html-academy-logo" alt="эйч-ти-эм-эл академия"></a>
-        </div>
+            <h2 class="visually-hidden">Давайте дружить</h2>
+            <ul class="footer-social-list no-list-style">
+              <li class="footer-social-item">
+                <a class="button" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden" aria-label="Фейсбук">Фейсбук</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.instagram.com/htmlacademy">
+                  <span class="visually-hidden" aria-label="Инстаграм">Инстаграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden" aria-label="Контакты">Твиттер</span>
+                </a>
+              </li>
+            </ul>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="image/icon/academy-logo.svg" width="115" height="34" class="html-academy-logo" alt="эйч-ти-эм-эл академия"></a>
+          </div>
+      </div>
     </footer>
   </body>
 </html>
