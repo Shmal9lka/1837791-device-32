@@ -81,26 +81,31 @@
         <div class="defenition-to-slider">
           <p class="item-head text-left">Порхает как бабочка,<br> жалит как пчела!</p>
           <p class="description definition">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
-          <a href="#" class="details">подробнее</a> <!--Здесь лучше гридами,думаю.-->
-          <div class="slider-controls">
-            <button class="slider-button current" type="button" name="slider-button-1">
-              <span class="visually-hidden">Дрон</span>
-            </button>
-            <button class="slider-button" type="button" name="slider-button-2">
-              <span class="visually-hidden">Часы</span>
-            </button>
-            <button class="slider-button" type="button" name="slider-button-3">
-              <span class="visually-hidden">Монопод</span>
-            </button>
+          <div class="details-button-wrapper">
+            <a href="#" class="details slider-details">подробнее</a> <!--Здесь лучше гридами,думаю.-->
+            <div class="slider-controls">
+              <button class="slider-button current" type="button" name="slider-button-1">
+                <span class="visually-hidden">Дрон</span>
+              </button>
+              <button class="slider-button" type="button" name="slider-button-2">
+                <span class="visually-hidden">Часы</span>
+              </button>
+              <button class="slider-button" type="button" name="slider-button-3">
+                <span class="visually-hidden">Монопод</span>
+              </button>
+            </div>
           </div>
-          <ul class="item-range no-list-style">
-            <li class="list-range text-left">800 м</li>
-            <li class="list-range text-left">50 м</li>
-          </ul>
-          <ul class="description no-list-style">
-            <li class="list-description definition text-left">Дальность полета</li>
-            <li class="list-description definition text-left">Радиус поражения</li>
-          </ul>
+          <div class="ttc-table-wrapper">
+            <ul class="item-range no-list-style">
+              <li class="list-range text-left">800 м</li>
+              <li class="list-description definition text-left">Дальность полета</li>
+              
+            </ul>
+            <ul class="no-list-style">
+              <li class="list-range text-left">50 м</li>
+              <li class="list-description definition text-left">Радиус поражения</li>
+            </ul>
+          </div>
           </div>
         </div>
       <div class="good-types-block container">
@@ -149,7 +154,7 @@
               <label for="credit-button" class="tab">Кредит</label></li>
           </ul>
           <div class="tabcontent">
-            <h3 class="item-head text-left">Доставка</h3>
+            <h3 class="item-head text-left delivery-head">Доставка</h3>
             <p class="item-tagline text-left">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь<br>
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -174,10 +179,12 @@
         </div>
 
 
-      <p class="rare-goods">Доставим редкий товар под заказ <!-- Здесь надо добалять иконку машины справа от текста? -->
+      <div class="container rare-goods-wrapper">
+        <p class="rare-goods">Доставим редкий товар под заказ
         <button class="info" type="button">
-          <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-      </span>
+        <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+      </div>
+      
       </p>
       <div class="contact-us container"> <!--TODO:Сделать на гридах-->
         <section class="about-block">

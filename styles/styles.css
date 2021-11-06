@@ -63,6 +63,9 @@ a{
     color:inherit;
     text-decoration: none;
 }
+p{
+    margin-block:0;
+}
 ul{
     padding-inline-start: 0;
 }
@@ -93,10 +96,11 @@ ul{
     text-decoration:none;
     text-transform: uppercase;
     color: #000000;
-    min-width: 100px;
+
    }
 .cart{
 justify-self: flex-end;
+
 
 }
 .navigation-contacts{
@@ -107,6 +111,11 @@ justify-self: flex-end;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    margin-top: 120px;
+    margin-bottom: 19px;
+}
+.description{
+    margin-bottom: 30px;
 }
 .item-tagline{
     font-weight: 400;
@@ -123,6 +132,9 @@ justify-self: flex-end;
     text-align:center;
     background-color: #FFE17F;
     text-decoration:none;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
 }
 .list-range{
     font-weight: 400;
@@ -146,6 +158,15 @@ justify-self: flex-end;
     text-align:center;
     text-transform: uppercase;
     text-decoration:none;
+
+}
+.rare-goods-wrapper{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px;
+    grid-column-gap: 50px;
+    letter-spacing: 00.2em;
+    background-color: #F0F0F0;
 }
  .delivery-item{ 
 
@@ -179,6 +200,7 @@ address{
     color:#fff;
     font-size: 16px;
     line-height: 19px;
+    padding-top:62px;
 }
 
 .about-text{
@@ -237,7 +259,7 @@ line-height:19px;
     height:70px;
 }
 .catalog-title{
-    padding-right:80px;
+
     padding-top:25px;
     margin:0;
 }
@@ -311,14 +333,54 @@ h3{
     height: 55px;
     border: 3px solid #EBEBEB;
     background-color: #fff;
+    margin-left:72px;
+    margin-bottom:51px;
+    padding:0;
 
 }
 .pagination-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    min-height:70px;
+    margin-top:31px;
+    margin-left:72px;
+    margin-bottom:77px;
+    font-weight:800;
+    font-size:16px;
+    line-height:20px;
     background-color: #EBEBEB;
+    display: flex;
+
+    width:760px;
+    letter-spacing: 00.2em;
 }
 .pagination-link{
-    color:#444444;
+    padding-right:15px;
+    padding-left:15px;
+    opacity:.3
+    
 }
+.pagination-container .pagination-link{
+    font-weight:400;
+    letter-spacing: normal;
+}
+.pagination-button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-self:stretch;
+    min-width:120px
+}
+.previous-button{
+    margin-right:auto;
+
+}
+.forward-button{
+    margin-left:auto;    
+}
+
+
 .our-services{
     font-family: "Raleway";
     font-weight: 800;
@@ -384,13 +446,33 @@ h3{
 }
 
 .slider-section{
+    display: grid; 
+    grid-template-columns: 560px 560px; 
+    grid-template-rows: 560px; 
+    gap: 0px 40px; 
+    grid-template-areas: 
+      "slider-image defenition-to-slider"; 
+}
+.defenition-to-slider {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-area: defenition-to-slider; 
+  }
+.details-button-wrapper{
     display:flex;
     justify-content: space-between;
-    list-style: none;
-    margin: 0 auto;
-    padding:0;
-    
-    width:1161px;
+}
+.slider-details{
+    width:220px;
+}
+.ttc-table-wrapper{
+    display: grid;
+    grid-template-columns: 160px 160px 1fr;
+}
+.definition{
+    font-size: 16px;
 }
 .block-preview{
     display:flex;
@@ -441,6 +523,7 @@ h3{
 .services-wrapper{
     height:403px;
     background-color: #F0F0F0;
+    margin-bottom: 159px;
 }
 .advantages-block{ 
     display:grid;
@@ -467,8 +550,11 @@ h3{
     
 }
 .tabcontent{
-    padding:87px 190px 0 30px;
+    padding:75px 190px 0 30px;
     margin:0 0 25px;   
+}
+.delivery-head{
+    margin-top:0;
 }
 .contact-us{
     display: flex;
@@ -605,7 +691,7 @@ h3{
     display:flex;
     justify-content:flex-end;
     background-color:#DCDCDC;
-    padding-right: 100px;
+    padding-right: 80px;
 }
 .catalog-filter-wrapper{
     display:flex;
@@ -651,4 +737,35 @@ h3{
     opacity: 60%;
     text-transform: none;
     padding-left: 0;
+}
+.product-list{
+    display:grid;
+    gap:40px;
+    padding:0;
+    margin:0;
+    margin-top:69px;
+    margin-bottom:44px;
+    margin-left:72px;
+    grid-template-columns:360px 360px;
+}
+.product-card{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto 50px;
+    gap:32px;
+    grid-template-areas: "img img"
+    "title price";
+}
+.product-card-link-image{
+    grid-area: img;
+}
+.product-card-link-title{
+    grid-area:title;
+}
+.product-card-price{
+    grid-area:price;
+}
+.product-card-title{
+    font-size: 18px;
+    margin:0;
 }
