@@ -9,10 +9,10 @@
     <header class="page-header">
       <nav class="nav-container">
       <a href="index.html"class="device link"><img class="logo" src="image/logo-main.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс"></a>
-      <div class="upper-nav"> <!--ссылки в дивах странно занимают место, хз почему-->
+      <div class="upper-nav"> 
 
             <div class="input-wrapper">
-              <form action="#" method="get"class="input-container">
+              <form action="#" method="GET" class="input-container">
                 <label for="search-field">
                  <img class="search-icon" src="image/icon/search.svg" width="16" height="16" alt="Поиск">
                 </label>
@@ -26,7 +26,7 @@
             </div>
             <div class="compare-basket-container">
               <div class="navigation-item-small compare">
-                <a class="navigation-link" href="#">Сравнить</a> <!--Не могу правильно отцентровать, не понимаю как учитывать иконки-->
+                <a class="navigation-link" href="#">Сравнить</a>
               </div>
               <div class="navigation-item-small cart">
                 <a class="navigation-link" href="#">Корзина</a>
@@ -158,14 +158,14 @@
                             <ul class="catalog-filter-list no-list-style">
                               <li class="catalog-filter-item">
                                 <label class="control">
-                                  <input class="visually-hidden control-input" type="radio" name="product-bluetoth" value="bluetoh-inside-yes">
+                                  <input class="visually-hidden control-input" type="radio" name="product-bluetooth" value="bluetooth-inside-yes">
                                   <span class="control-mark"></span>
                               <span class="control-label text-left">Есть</span>
                                 </label>
                               </li>
                               <li class="catalog-filter-item">
                                   <label class="control">
-                                    <input class="visually-hidden control-input" type="radio" name="product-bluetoth" value="bluetoh-inside-no">
+                                    <input class="visually-hidden control-input" type="radio" name="product-bluetooth" value="bluetooth-inside-no">
                                     <span class="control-mark"></span>
                                 <span class="control-label text-left">Нет</span>
                                   </label>
@@ -181,17 +181,15 @@
               <div class="sorting-table">
                   <div class="left-top-sorting">
                     <h2 class="filter-head sorting-title">Сортировка:</h2>
-                    <p class="goods-sorting">Сначала популярные</p>
+                    <p class="sorting-popular">Сначала популярные</p>
                   </div>
                   <ul class="goods-sorting-value">
                     <li>
-                      <a class="goods-sorting-value-link sort-up" href="#" title="Вверх">
-                        <span class="visually-hidden">Сортировка товаров "сначала самые высокие в выбранной категории"</span>
+                      <a class="goods-sorting-value-link sort-up" href="#" title="самые высокие в выбранной категории" aria-label="Сортировка товаров сначала самые высокие в выбранной категории">
                       </a>
                     </li>
                     <li>
-                      <a class="goods-sorting-value-link sort-down" href="#" title="Вниз">
-                        <span class="visually-hidden">Сортировка товаров "сначала самые низкие в выбранной категории"</span>
+                      <a class="goods-sorting-value-link sort-down" href="#" title="самые низкие в выбранной категории" aria-label="Сортировка товаров сначала самые низкие в выбранной категории">
                       </a>
                     </li>
                   </ul>
@@ -236,16 +234,15 @@
                       </ul>
                     <button class="button show-more filter-head" type="button">Загрузить еще</button>
 
-                      <div class="pagination-container">
-                        <a class="pagination-button previous-button" href="#">Назад</a>
-                        <a class="pagination-link " href="#">1</a>
-                        <a class="pagination-link" href="#">2</a>
-                        <a class="pagination-link" href="#">3</a>
-                        <a class="pagination-link" href="#">...</a>
-                        <a class="pagination-link" href="#">15</a>
-                        <a class="pagination-button forward-button" href="#">Вперед</a>
-
-                      </div>
+                      <ul class="pagination-container no-list-style">
+                        <li><a class="pagination-button previous-button" href="#">Назад</a></li>
+                        <li><a class="pagination-link " href="#">1</a></li>
+                        <li><a class="pagination-link" href="#">2</a></li>
+                        <li><a class="pagination-link" href="#">3</a></li>
+                        <li><a class="pagination-link" href="#">...</a></li>
+                        <li><a class="pagination-link" href="#">15</a></li>
+                        <li><a class="pagination-button forward-button" href="#">Вперед</a></li>
+                      </ul>
                     
 
                   
@@ -286,7 +283,7 @@
                 </li>
                 <li class="footer-social-item">
                   <a class="button" href="https://www.twitter.com/htmlacademy_ru">
-                    <span class="visually-hidden" aria-label="Контакты">Твиттер</span>
+                    <span class="visually-hidden" aria-label="Твиттер">Твиттер</span>
                   </a>
                 </li>
               </ul>
