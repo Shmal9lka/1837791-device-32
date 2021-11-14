@@ -7,8 +7,8 @@
   </head>
   <body class="page-body">
     <div class="page-wrapper">
-      <header class="page-header catalog-page-header">
-        <a class="header-logo-link active-logo-link" href="index.html">
+      <header class="page-header">
+        <a class="header-logo-link">
           <img class="header-logo" src="image/logo-main.svg" width="145" height="36" alt="Логотип магазина «Девайс».">
         </a>
         <nav class="header-navigation">
@@ -17,15 +17,11 @@
             <label class="visually-hidden" for="searched-text">Поиск по сайту</label>
             <input class="form-search-field" type="text" id="searched-text" name="searched-text"
                    placeholder="Поиск по сайту" required>
-            <button class="form-search-button" type="submit">
-              Найти
-            </button>
+            <button class="form-search-button" type="submit">Найти</button>
           </form>
           <ul class="header-navigation-user-menu">
             <li class="header-navigation-user-menu-item header-navigation-user">
-              <a
-                class="header-navigation-link user-navigation-link header-navigation-icon header-navigation-user-icon"
-                href="#">
+              <a class="header-navigation-link user-navigation-link header-navigation-icon header-navigation-user-icon" href="#">
                 Коля Петухов
               </a>
             </li>
@@ -35,40 +31,25 @@
               </a>
             </li>
             <li class="header-navigation-user-menu-item header-navigation-compare">
-              <a
-                class="header-navigation-link user-navigation-link header-navigation-icon header-navigation-compare-icon"
-                href="#">
-                Сравнить
-              </a>
+              <a class="header-navigation-link cart-navigation-link header-navigation-icon header-navigation-compare-icon" href="#">
+                Сравнить</a>
             </li>
             <li class="header-navigation-user-menu-item header-navigation-cart">
-              <a
-                class="header-navigation-link user-navigation-link header-navigation-icon header-navigation-cart-icon"
-                href="#">
-                <span class="header-navigation-cart-count" data-cart-count="2"></span>
-                Корзина
-              </a>
+              <a class="header-navigation-link cart-navigation-link header-cart" href="#">
+                Корзина </a>
               <div class="popover popover-cart">
                 <div class="popover-content">
                   <ul class="cart-content-list">
                     <li class="cart-item">
                       <a class="cart-item-link" href="#">
-                        <img class="cart-item-image"
-                             src="img/catalog/user-self-pod-small.png"
-                             width="41"
-                             height="43"
-                             alt="">
+                        <img class="cart-item-image" src="image/catalog/product-1-small.png" width="41" height="43" alt="Любительская селфи палка">
                         <span class="cart-item-title">Любительская<br>селфи-палка</span>
                       </a>
                       <button class="cart-item-remove" type="button"></button>
                     </li>
                     <li class="cart-item">
                       <a class="cart-item-link" href="#">
-                        <img class="cart-item-image"
-                             src="img/catalog/prof-self-pod-small.png"
-                             width="41"
-                             height="43"
-                             alt="">
+                        <img class="cart-item-image"src="image/catalog/product-2-small.png" width="41" height="43" alt="Профессиональная селфи палка">
                         <span class="cart-item-title">Профессиональная<br>селфи-палка</span>
                       </a>
                       <button class="cart-item-remove" type="button"></button>
