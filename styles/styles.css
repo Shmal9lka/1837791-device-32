@@ -2072,6 +2072,51 @@ h3{
   top: 75px;
   z-index: -1;
 }
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  display: flex;
+  transform: translateY(-50%);
+}
+.slider-button {
+  width: 40px;
+  height: 80px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  transition-property: opacity, border;
+  transition-duration: var(--transition-duration);
+}
+
+.slider-button-prev {
+  background-image: url("../image/icon/slider-next.svg");
+  margin-left: 9px;
+  transform: rotate(180deg);
+}
+
+.slider-button-next {
+  background-image: url("../image/icon/slider-next.svg");
+  margin-right: 9px;
+  margin-left: auto;
+}
+
+.slider-button:focus {
+  border: 2px solid #af4fff;
+  outline: none;
+  border-radius: 6px;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+  border: none;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+  border: none;
+}
 .defenition-to-slider {
   display: grid; 
   grid-template-columns: 1fr; 
